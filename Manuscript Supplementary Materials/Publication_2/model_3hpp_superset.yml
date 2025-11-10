@@ -1,0 +1,549 @@
+---
+#  title: Metabolites and reactions added to iIsor850 enabling biosynthetic 
+#         pathways that produce 3-hydroxypropionic acid from pyruvate
+#  description: COBRApy metabolic model data for 3-hydroxypropionic acid production.
+#         Pathway membership is listed in the "notes - model_list" field.
+!!omap
+- metabolites:
+  - !!omap
+    - id: 3hpcoa_c
+    - name: 3-Hydroxypropionyl-CoA
+    - compartment: c
+    - charge: -4
+    - formula: C24H36N7O18P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - bigg.metabolite: 3hpcoa
+      - biocyc: META:3-HYDROXY-PROPIONYL-COA
+      - chebi: CHEBI:27762
+      - kegg.compound: C05668
+      - sbo: SBO:0000247
+      - seed.compound: cpd03375
+  - !!omap
+    - id: prpncoa_c
+    - name: Propenoyl-CoA
+    - compartment: c
+    - charge: -4
+    - formula: C24H34N7O17P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - bigg.metabolite: prpncoa
+      - biocyc: META:ACRYLYL-COA
+      - chebi: CHEBI:15513
+      - kegg.compound: C00894
+      - sbo: SBO:0000247
+      - seed.compound: cpd00663
+  - !!omap
+    - id: laccoa_c
+    - name: Lactoyl-CoA
+    - compartment: c
+    - charge: -4
+    - formula: C24H36N7O18P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p1
+    - annotation: !!omap
+      - bigg.metabolite: laccoa
+      - biocyc: META:Lactoyl-CoAs
+      - chebi: CHEBI:15529
+      - kegg.compound: C00827
+      - sbo: SBO:0000247
+      - seed.compound: cpd27396
+  - !!omap
+    - id: 3hpp_c
+    - name: 3-hydroxypropanoate
+    - compartment: c
+    - charge: -1
+    - formula: C3H5O3
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p2, model_3hpp_p3, model_3hpp_p4, model_3hpp_p5,
+          model_3hpp_p6, model_3hpp_p7, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.metabolite: 3hpp
+      - biocyc: 3-HYDROXY-PROPIONATE
+      - chebi: CHEBI:16510
+      - kegg.metabolite: C01013
+      - metanetx.chemical: MNXM872
+      - sbo: SBO:0000247
+      - seed.compound: cpd00745
+  - !!omap
+    - id: 3hpp_e
+    - name: 3-hydroxypropanoate
+    - compartment: e
+    - charge: -1
+    - formula: C3H5O3
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p2, model_3hpp_p3, model_3hpp_p4, model_3hpp_p5,
+          model_3hpp_p6, model_3hpp_p7, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.metabolite: 3hpp
+      - biocyc: 3-HYDROXY-PROPIONATE
+      - chebi: CHEBI:16510
+      - kegg.metabolite: C01013
+      - metanetx.chemical: MNXM872
+      - sbo: SBO:0000247
+      - seed.compound: cpd00745
+  - !!omap
+    - id: msa_c
+    - name: malonate semialdehyde
+    - compartment: c
+    - charge: -1
+    - formula: C3H3O3
+    - notes: !!omap
+      - model_list: model_3hpp_p2, model_3hpp_p3, model_3hpp_p6, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.metabolite: msa
+      - biocyc: META:MALONATE-S-ALD
+      - chebi: CHEBI:33190
+      - kegg.metabolite: C00222
+      - metanetx.chemical: MNXM244
+      - sbo: SBO:0000247
+      - seed.compound: cpd00191
+  - !!omap
+    - id: alaBcoa_c
+    - name: beta-alanyl CoA
+    - compartment: c
+    - charge: -3
+    - formula: C24H38N8O17P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - biocyc: META:BETA-ALANYL-COA
+      - chebi: CHEBI:15507
+      - kegg.compound: C02335
+      - sbo: SBO:0000247
+      - seed.compound: cpd01560
+  - !!omap
+    - id: 3hpcoa_m
+    - name: 3-Hydroxypropionyl-CoA
+    - compartment: m
+    - charge: -4
+    - formula: C24H36N7O18P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.metabolite: 3hpcoa
+      - biocyc: META:3-HYDROXY-PROPIONYL-COA
+      - chebi: CHEBI:27762
+      - kegg.compound: C05668
+      - sbo: SBO:0000247
+      - seed.compound: cpd03375
+  - !!omap
+    - id: prpncoa_m
+    - name: Acrylyl CoA
+    - compartment: m
+    - charge: -4
+    - formula: C24H34N7O17P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.metabolite: prpncoa
+      - biocyc: META:ACRYLYL-COA
+      - chebi: CHEBI:15513
+      - kegg.compound: C00894
+      - sbo: SBO:0000247
+      - seed.compound: cpd00663
+  - !!omap
+    - id: 3hpp_m
+    - name: 3-hydroxypropanoate
+    - compartment: m
+    - charge: -1
+    - formula: C3H5O3
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.metabolite: 3hpp
+      - biocyc: META:3-HYDROXY-PROPIONATE
+      - chebi: CHEBI:16510
+      - kegg.compound: C01013
+      - sbo: SBO:0000247
+      - seed.compound: cpd00745
+  - !!omap
+    - id: mmcoa_m
+    - name: Methylmalonyl-CoA
+    - compartment: m
+    - charge: -5
+    - formula: C25H35N7O19P3S
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - biocyc: META:Methylmalonyl-CoA
+      - chebi: CHEBI:16625
+      - kegg.compound: C02557
+      - sbo: SBO:0000247
+      - seed.compound: cpd01675
+- reactions:
+  - !!omap
+    - id: EX_3hpp_e
+    - name: 3-hydroxypropionate exchange
+    - metabolites: !!omap
+      - 3hpp_e: -1
+    - lower_bound: 0
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p2, model_3hpp_p3, model_3hpp_p4, model_3hpp_p5,
+          model_3hpp_p6, model_3hpp_p7, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.reaction: EX_3hpp_e
+      - metanetx.reaction: MNXR94904
+      - sbo: SBO:0000627
+  - !!omap
+    - id: LCD_c
+    - name: Lactoyl-CoA dehydratase
+    - metabolites: !!omap
+      - h2o_c: 1
+      - laccoa_c: -1
+      - prpncoa_c: 1
+    - lower_bound: 0
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1
+    - annotation: !!omap
+      - bigg.reaction: LCD
+      - kegg.reaction: R02963
+      - sbo: SBO:0000176
+      - seed.reaction: rxn25961
+  - !!omap
+    - id: 3HPCOAHYD_c
+    - name: 3-HP-CoA hydrolase/CoA-transferase/3-hydroxyisobutryl-CoA hydrolase
+    - metabolites: !!omap
+      - 3hpcoa_c: -1
+      - 3hpp_c: 1
+      - coa_c: 1
+      - h2o_c: -1
+      - h_c: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - bigg.reaction: 3HPCOAHYD
+      - kegg.reaction: R03158
+      - sbo: SBO:0000176
+      - seed.reaction: rxn02261
+  - !!omap
+    - id: LDH_D_c
+    - name: D-lactate dehydrogenase
+    - metabolites: !!omap
+      - h_c: 1
+      - lac__D_c: -1
+      - nad_c: -1
+      - nadh_c: 1
+      - pyr_c: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1
+    - annotation: !!omap
+      - bigg.reaction: LDH_D
+      - kegg.reaction: R00704
+      - sbo: SBO:0000176
+      - seed.reaction: rxn00500
+  - !!omap
+    - id: LACCT_c
+    - name: acetyl-CoA-transferase
+    - metabolites: !!omap
+      - ac_c: 1
+      - accoa_c: -1
+      - lac__D_c: -1
+      - laccoa_c: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1
+    - annotation: !!omap
+      - bigg.reaction: ''
+      - kegg.reaction: R05508
+      - sbo: SBO:0000176
+      - seed.reaction: rxn03798
+  - !!omap
+    - id: 3HPPt_c_e
+    - name: 3-hydroxypropionate transport
+    - metabolites: !!omap
+      - 3hpp_c: -1
+      - 3hpp_e: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p2, model_3hpp_p3, model_3hpp_p4, model_3hpp_p5,
+          model_3hpp_p6, model_3hpp_p7, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.reaction: HPPt
+      - biocyc: TRANS-RXN0-465
+      - metanetx.reaction: MNXR94904
+      - sbo: SBO:0000185
+      - seed.reaction: rxn29193
+  - !!omap
+    - id: HPHL_c
+    - name: 3-Hydroxypropionyl-CoA hydro-lyase
+    - metabolites: !!omap
+      - 3hpcoa_c: 1
+      - h2o_c: -1
+      - prpncoa_c: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p1, model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - bigg.reaction: HPHL
+      - kegg.reaction: R03045
+      - sbo: SBO:0000176
+      - seed.reaction: rxn02181
+  - !!omap
+    - id: 3OXPPOX_c
+    - name: malonyl-CoA reductase
+    - metabolites: !!omap
+      - coa_c: 1
+      - h_c: -1
+      - malcoa_c: -1
+      - msa_c: 1
+      - nadp_c: 1
+      - nadph_c: -1
+    - lower_bound: 0
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p2
+    - annotation: !!omap
+      - kegg.reaction: R00740
+      - sbo: SBO:0000176
+      - seed.reaction: rxn00532
+  - !!omap
+    - id: MSARH_c
+    - name: malonic semialdehyde reductase, NADH
+    - metabolites: !!omap
+      - 3hpp_c: 1
+      - h_c: -1
+      - msa_c: -1
+      - nad_c: 1
+      - nadh_c: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p2, model_3hpp_p3, model_3hpp_p6
+    - annotation: !!omap
+      - sbo: SBO:0000176
+  - !!omap
+    - id: 3A2OA_c
+    - name: 3-Aminopropanoate 2-oxoglutarate aminotransferase (beta-alanine-pyruvate
+        aminotransferase)
+    - metabolites: !!omap
+      - akg_c: -1
+      - ala_B_c: -1
+      - glu__L_c: 1
+      - msa_c: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p3, model_3hpp_p6, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.reaction: 3A2OA
+      - biocyc: RXN-2901
+      - ec-code: 2.6.1.19,2.6.1.55
+      - kegg.reaction: R00908
+      - metanetx.reaction: MNXR95862
+      - sbo: SBO:0000176
+      - seed.reaction: rxn00657
+  - !!omap
+    - id: ASP1DC_c
+    - name: aspartate 1-decarboxylase
+    - metabolites: !!omap
+      - ala_B_c: 1
+      - asp__L_c: -1
+      - co2_c: 1
+      - h_c: -1
+    - lower_bound: 0
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p3, model_3hpp_p4, model_3hpp_p7, model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.reaction: ASP1DC
+      - biocyc: ASPDECARBOX-RXN
+      - ec-code: 4.1.1.11,4.1.1.15
+      - kegg.reaction: R00489
+      - metanetx.reaction: MNXR96077
+      - sbo: SBO:0000176
+      - seed.reaction: rxn00346
+  - !!omap
+    - id: ALABAL_c
+    - name: β-alanine-CoA ammonium lyase
+    - metabolites: !!omap
+      - alaBcoa_c: -1
+      - nh4_c: 1
+      - prpncoa_c: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - kegg.reaction: R03046
+      - sbo: SBO:0000176
+      - seed.reaction: rxn02182
+  - !!omap
+    - id: ALABCT_c
+    - name: acetate-CoA ligase/CoA-transferase
+    - metabolites: !!omap
+      - ac_c: 1
+      - accoa_c: -1
+      - alaBcoa_c: 1
+      - ala_B_c: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p4, model_3hpp_p7
+    - annotation: !!omap
+      - sbo: SBO:0000176
+  - !!omap
+    - id: MMM_m
+    - name: Methylmalonyl-CoA mutase
+    - metabolites: !!omap
+      - mmcoa_m: 1
+      - succoa_m: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.reaction: MMM
+      - kegg.reaction: R00833
+      - sbo: SBO:0000176
+      - seed.reaction: rxn00602
+  - !!omap
+    - id: 3HPCOAHYD_m
+    - name: 3-HP-CoA hydrolase/CoA-transferase/3-hydroxyisobutryl-CoA hydrolase
+    - metabolites: !!omap
+      - 3hpcoa_m: -1
+      - 3hpp_m: 1
+      - coa_m: 1
+      - h2o_m: -1
+      - h_m: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.reaction: 3HPCOAHYD
+      - kegg.reaction: R03158
+      - sbo: SBO:0000176
+      - seed.reaction: rxn02261
+  - !!omap
+    - id: MMCD_m
+    - name: Methylmalonyl-CoA decarboxylase
+    - metabolites: !!omap
+      - co2_m: 1
+      - h_m: -1
+      - mmcoa_m: -1
+      - ppcoa_m: 1
+    - lower_bound: 0
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.reaction: MMCD
+      - kegg.reaction: R00923
+      - sbo: SBO:0000176
+      - seed.reaction: rxn00672
+  - !!omap
+    - id: HPHL_m
+    - name: 3-Hydroxypropionyl-CoA hydro-lyase
+    - metabolites: !!omap
+      - 3hpcoa_m: 1
+      - h2o_m: -1
+      - prpncoa_m: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.reaction: HPHL
+      - kegg.reaction: R03045
+      - sbo: SBO:0000176
+      - seed.reaction: rxn02181
+  - !!omap
+    - id: PCS_m
+    - name: Propionyl-CoA synthetase - OS17
+    - metabolites: !!omap
+      - ppcoa_m: -1
+      - prpncoa_m: 1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - sbo: SBO:0000176
+  - !!omap
+    - id: 3HPPt_m_c
+    - name: 3-hydroxypropionate transport
+    - metabolites: !!omap
+      - 3hpp_c: 1
+      - 3hpp_m: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p5
+    - annotation: !!omap
+      - bigg.reaction: HPPt
+      - biocyc: TRANS-RXN0-465
+      - metanetx.reaction: MNXR94904
+      - sbo: SBO:0000185
+      - seed.reaction: rxn29193
+  - !!omap
+    - id: ALAAM_c
+    - name: alanine 2,3-aminomutase
+    - metabolites: !!omap
+      - ala_B_c: 1
+      - ala__L_c: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p6, model_3hpp_p7
+    - annotation: !!omap
+      - sbo: SBO:0000176
+  - !!omap
+    - id: MSAR_c
+    - name: malonic semialdehyde reductase, NADPH
+    - metabolites: !!omap
+      - 3hpp_c: 1
+      - h_c: -1
+      - msa_c: -1
+      - nadp_c: 1
+      - nadph_c: -1
+    - lower_bound: -1000
+    - upper_bound: 1000
+    - gene_reaction_rule: ''
+    - notes: !!omap
+      - model_list: model_3hpp_p3_nadph
+    - annotation: !!omap
+      - bigg.reaction: MSAR
+      - biocyc: RXN-8974
+      - ec-code: 1.1.1.-,1.1.1.2,1.1.1.298
+      - kegg.reaction: R09289
+      - metanetx.reaction: MNXR101737
+      - sbo: SBO:0000176
+      - seed.reaction: rxn16149
+- id: 3HPP_superset
+- compartments: !!omap
+  - c: 'cytoplasm'
+  - e: 'extracellular'
+  - m: 'mitochondrion'
+...

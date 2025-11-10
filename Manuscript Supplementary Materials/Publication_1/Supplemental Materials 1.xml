@@ -1,0 +1,2337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
+  <model metaid="meta_adjunct_model" id="adjunct_model" fbc:strict="true">
+    <listOfUnitDefinitions>
+      <unitDefinition id="mmol_per_gDW_per_hr">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="c" constant="true"/>
+      <compartment id="e" constant="true"/>
+      <compartment id="m" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="meta_M_msa_c" sboTerm="SBO:0000247" id="M_msa_c" name="malonate semialdehyde" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H3O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon, 3hpp</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_3hpp_c" sboTerm="SBO:0000247" id="M_3hpp_c" name="3-hydroxypropanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpp</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_3hpp_e" sboTerm="SBO:0000247" id="M_3hpp_e" name="3-hydroxypropanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpp</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_ghb_c" sboTerm="SBO:0000247" id="M_ghb_c" name="Gamma-hydroxybutyrate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ghb</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_ghb_e" sboTerm="SBO:0000247" id="M_ghb_e" name="Gamma-hydroxybutyrate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ghb</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_3mob_e" sboTerm="SBO:0000247" id="M_3mob_e" name="3-methyl-2-oxobutanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3mob</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_acac_c" sboTerm="SBO:0000247" id="M_acac_c" name="Acetoacetate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_bhb_c" sboTerm="SBO:0000247" id="M_bhb_c" name="(R)-3-Hydroxybutanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_bhb_e" sboTerm="SBO:0000247" id="M_bhb_e" name="(R)-3-Hydroxybutanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_2obut_e" sboTerm="SBO:0000247" id="M_2obut_e" name="2-oxobutanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2obut</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_2e2hobtae_c" sboTerm="SBO:0000247" id="M_2e2hobtae_c" name="2-ethyl-2-hydroxybutanedioate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C6H8O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_3hpt_c" sboTerm="SBO:0000247" id="M_3hpt_c" name="3-hydroxypentanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_3hpt_e" sboTerm="SBO:0000247" id="M_3hpt_e" name="3-hydroxypentanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_btcoa_m" sboTerm="SBO:0000247" id="M_btcoa_m" name="butanoyl-CoA" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C25H38N7O17P3S1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_3hbcoa_m" sboTerm="SBO:0000247" id="M_3hbcoa_m" name="3-Hydroxybutanoyl-CoA" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C25H38N7O18P3S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_b2coa_m" sboTerm="SBO:0000247" id="M_b2coa_m" name="Crotonoyl-CoA" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C25H36N7O17P3S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_2oxptn_m" sboTerm="SBO:0000247" id="M_2oxptn_m" name="2-oxopentanoic acid" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_2oxptn_c" sboTerm="SBO:0000247" id="M_2oxptn_c" name="2-oxopentanoic acid" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_2oxptn_e" sboTerm="SBO:0000247" id="M_2oxptn_e" name="2-oxopentanoic acid" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_citm_e" sboTerm="SBO:0000247" id="M_citm_e" name="citramalate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C5H6O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: citm</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_ccmuac_e" sboTerm="SBO:0000247" id="M_ccmuac_e" name="cis,cis-muconate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C6H4O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_ccmuac_c" sboTerm="SBO:0000247" id="M_ccmuac_c" name="cis,cis-muconate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C6H4O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_catechol_c" sboTerm="SBO:0000247" id="M_catechol_c" name="catechol" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H6O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_34dhbz_c" sboTerm="SBO:0000247" id="M_34dhbz_c" name="protocatechuic acid" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C7H5O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_3hivac_c" name="3-hydroxy-3-methylbutanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hivac</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_3hivac_e" name="3-hydroxy-3-methylbutanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hivac</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_4pmal_c" sboTerm="SBO:0000247" id="M_4pmal_c" name="4-Phospho-L-malate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C4H4O8P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_malsa_c" sboTerm="SBO:0000247" id="M_malsa_c" name="2-Hydroxy-4-oxobutanoic acid" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_24dhbut_c" sboTerm="SBO:0000247" id="M_24dhbut_c" name="2,4-dihydroxybutanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_24dhbut_e" sboTerm="SBO:0000247" id="M_24dhbut_e" name="2,4-dihydroxybutanoate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H7O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_malon_c" sboTerm="SBO:0000247" id="M_malon_c" name="malonate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C3H2O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_malon_e" sboTerm="SBO:0000247" id="M_malon_e" name="malonate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C3H2O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_itacon_c" sboTerm="SBO:0000247" id="M_itacon_c" name="itaconate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C5H4O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: itacon</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_itacon_e" sboTerm="SBO:0000247" id="M_itacon_e" name="itaconate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C5H4O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: itacon</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_xylnact__D_c" sboTerm="SBO:0000247" id="M_xylnact__D_c" name="D-Xylonolactone" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H8O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_dxylnt_c" sboTerm="SBO:0000247" id="M_dxylnt_c" name="D-Xylonate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_dxylnt_e" sboTerm="SBO:0000247" id="M_dxylnt_e" name="D-Xylonate" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_4h2opntn_c" sboTerm="SBO:0000247" id="M_4h2opntn_c" name="4-Hydroxy-2-oxopentanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_24dhpnta_c" sboTerm="SBO:0000247" id="M_24dhpnta_c" name="2,4-dihydroxy-pentanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H9O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_4o2pntn_c" sboTerm="SBO:0000247" id="M_4o2pntn_c" name="acetylacrylate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_4oxptn_c" sboTerm="SBO:0000247" id="M_4oxptn_c" name="4-oxopentanoic acid" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_4oxptn_e" sboTerm="SBO:0000247" id="M_4oxptn_e" name="4-oxopentanoic acid" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_fmnh2_c" sboTerm="SBO:0000247" id="M_fmnh2_c" name="FMNH2 [cytoplasm]" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C17H21N4O9P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: frd</p>
+          </html>
+        </notes>
+      </species>
+      <species metaid="meta_M_asp__L_c" sboTerm="SBO:0000247" id="M_asp__L_c" name="L-aspartate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H6N1O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0973</p>
+            <p>yeastkegg_id: C00049[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_asp__L_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:L-ASPARTATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:29991"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00049"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5960"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00041"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00896"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_h_c" sboTerm="SBO:0000247" id="M_h_c" name="H+" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="H1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0794</p>
+            <p>yeastkegg_id: C00080[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_h_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PROTON"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:24636"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00080"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1038"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00067"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00862"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_co2_c" sboTerm="SBO:0000247" id="M_co2_c" name="carbon dioxide" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C1O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0456</p>
+            <p>yeastkegg_id: C00011[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_co2_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CARBON-DIOXIDE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16526"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00011"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/280"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00011"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00912"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_ala_B_c" sboTerm="SBO:0000247" id="M_ala_B_c" name="beta-alanine" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H7N1O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0441</p>
+            <p>yeastkegg_id: C00099[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_ala_B_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:B-ALANINE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16958"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00099"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/239"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00085"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00195"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_akg_c" sboTerm="SBO:0000247" id="M_akg_c" name="2-oxoglutarate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C5H4O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0180</p>
+            <p>yeastkegg_id: C00026[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_akg_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:2-KETOGLUTARATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16810"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00026"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/51"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00024"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00153"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_glu__L_c" sboTerm="SBO:0000247" id="M_glu__L_c" name="L-glutamate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H8N1O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0991</p>
+            <p>yeastkegg_id: C00025[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_glu__L_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:GLT"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:29985"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00025"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/33032"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00023"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00271"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_nadh_c" sboTerm="SBO:0000247" id="M_nadh_c" name="NADH" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C21H27N7O14P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1203</p>
+            <p>yeastkegg_id: C00004[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_nadh_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NADH"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57945"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/439153"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00143"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_nad_c" sboTerm="SBO:0000247" id="M_nad_c" name="NAD" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H26N7O14P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1198</p>
+            <p>yeastkegg_id: C00003[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_nad_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NAD"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57540"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00003"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5893"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00003"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00110"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_sucsal_c" sboTerm="SBO:0000247" id="M_sucsal_c" name="succinic semialdehyde" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1461</p>
+            <p>yeastkegg_id: C00232[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_sucsal_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:SUCC-S-ALD"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57706"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00232"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1112"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00199"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00236"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_nadph_c" sboTerm="SBO:0000247" id="M_nadph_c" name="NADPH" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C21H26N7O17P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1212</p>
+            <p>yeastkegg_id: C00005[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_nadph_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NADPH"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57783"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00005"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5884"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00005"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00426"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_nadp_c" sboTerm="SBO:0000247" id="M_nadp_c" name="NADP(+)" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C21H25N7O17P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1207</p>
+            <p>yeastkegg_id: C00006[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_nadp_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NADP"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:58349"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00006"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5886"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00006"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00427"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_3mob_c" sboTerm="SBO:0000247" id="M_3mob_c" name="3-methyl-2-oxobutanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H7O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0232</p>
+            <p>yeastkegg_id: C00141[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_3mob_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:2-KETO-ISOVALERATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:11851"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00141"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/49"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00123"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00365"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_coa_c" sboTerm="SBO:0000247" id="M_coa_c" name="coenzyme A" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C21H32N7O16P3S1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0529</p>
+            <p>yeastkegg_id: C00010[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_coa_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CO-A"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57287"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00010"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/87642"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00010"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00045"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_aacoa_c" sboTerm="SBO:0000247" id="M_aacoa_c" name="acetoacetyl-CoA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C25H36N7O18P3S1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0367</p>
+            <p>yeastkegg_id: C00332[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_aacoa_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACETOACETYL-COA"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57286"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00332"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/92153"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00279"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00529"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_h2o_c" sboTerm="SBO:0000247" id="M_h2o_c" name="H2O" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0803</p>
+            <p>yeastkegg_id: C00001[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_h2o_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:WATER"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15377"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00001"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/962"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00001"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00890"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_h_e" sboTerm="SBO:0000247" id="M_h_e" name="H+" compartment="e" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="H1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0796</p>
+            <p>yeastkegg_id: C00080[c_06]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_h_e">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PROTON"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:24636"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00080"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1038"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00067"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00862"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_2obut_c" sboTerm="SBO:0000247" id="M_2obut_c" name="2-oxobutanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0178</p>
+            <p>yeastkegg_id: C00109[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_2obut_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:2-OXOBUTANOATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16763"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00109"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/58"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00094"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00071"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_accoa_c" sboTerm="SBO:0000247" id="M_accoa_c" name="acetyl-CoA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C23H34N7O17P3S1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0373</p>
+            <p>yeastkegg_id: C00024[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_accoa_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACETYL-COA"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57288"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00024"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/444493"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00022"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00312"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_aacoa_m" sboTerm="SBO:0000247" id="M_aacoa_m" name="acetoacetyl-CoA" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C25H36N7O18P3S1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0370</p>
+            <p>yeastkegg_id: C00332[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_aacoa_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACETOACETYL-COA"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57286"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00332"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/92153"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00279"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00529"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_h_m" sboTerm="SBO:0000247" id="M_h_m" name="H+" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="H1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0799</p>
+            <p>yeastkegg_id: C00080[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_h_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PROTON"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:24636"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00080"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1038"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00067"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00862"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_nadh_m" sboTerm="SBO:0000247" id="M_nadh_m" name="NADH" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C21H27N7O14P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1205</p>
+            <p>yeastkegg_id: C00004[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_nadh_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NADH"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57945"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/439153"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00143"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_nad_m" sboTerm="SBO:0000247" id="M_nad_m" name="NAD" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H26N7O14P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1200</p>
+            <p>yeastkegg_id: C00003[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_nad_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NAD"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57540"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00003"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5893"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00003"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00110"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_h2o_m" sboTerm="SBO:0000247" id="M_h2o_m" name="H2O" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0807</p>
+            <p>yeastkegg_id: C00001[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_h2o_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:WATER"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15377"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00001"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/962"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00001"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00890"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_fad_m" sboTerm="SBO:0000247" id="M_fad_m" name="FAD" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C27H30N9O15P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0688</p>
+            <p>yeastkegg_id: C00016[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_fad_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:FAD"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57692"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00016"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/643975"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00015"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00296"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_fadh2_m" sboTerm="SBO:0000247" id="M_fadh2_m" name="FADH2" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C27H33N9O15P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0690</p>
+            <p>yeastkegg_id: C01352[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_fadh2_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:FADH2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:58307"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C01352"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/446013"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00982"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00597"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_coa_m" sboTerm="SBO:0000247" id="M_coa_m" name="coenzyme A" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C21H32N7O16P3S1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0532</p>
+            <p>yeastkegg_id: C00010[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_coa_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CO-A"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:57287"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00010"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/87642"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00010"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00045"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_co2_m" sboTerm="SBO:0000247" id="M_co2_m" name="carbon dioxide" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C1O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0460</p>
+            <p>yeastkegg_id: C00011[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_co2_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CARBON-DIOXIDE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16526"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00011"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/280"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00011"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00912"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_citm_c" sboTerm="SBO:0000247" id="M_citm_c" name="citramalate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C5H6O5">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_citm_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CPD-14325"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13997"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00815"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00607"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_3dhsk_c" sboTerm="SBO:0000247" id="M_3dhsk_c" name="3-dehydroshikimate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C7H7O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0211</p>
+            <p>yeastkegg_id: C02637[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_3dhsk_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:3-DEHYDRO-SHIKIMATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16630"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C02637"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/439774"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd01716"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00390"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_o2_c" sboTerm="SBO:0000247" id="M_o2_c" name="oxygen" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1275</p>
+            <p>yeastkegg_id: C00007[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_o2_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:OXYGEN-MOLECULE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15379"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00007"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/977"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00007"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00900"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_4mop_c" sboTerm="SBO:0000247" id="M_4mop_c" name="4-methyl-2-oxopentanoate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C6H9O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0291</p>
+            <p>yeastkegg_id: C00233[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_4mop_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:2K-4CH3-PENTANOATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:17865"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00233"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/70"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00200"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00388"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_mal__L_c" sboTerm="SBO:0000247" id="M_mal__L_c" name="(S)-malate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C4H4O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0066</p>
+            <p>yeastkegg_id: C00149[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_mal__L_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:MAL"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15589"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00149"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/222656"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00130"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00280"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_atp_c" sboTerm="SBO:0000247" id="M_atp_c" name="ATP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C10H12N5O13P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0434</p>
+            <p>yeastkegg_id: C00002[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_atp_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ATP"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:30616"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/5957"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00002"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00109"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_adp_c" sboTerm="SBO:0000247" id="M_adp_c" name="ADP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H12N5O10P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0394</p>
+            <p>yeastkegg_id: C00008[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_adp_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ADP"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:456216"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00008"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/6022"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00008"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00914"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_pi_c" sboTerm="SBO:0000247" id="M_pi_c" name="phosphate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="H1O4P1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1322</p>
+            <p>yeastkegg_id: C00009[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_pi_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:Pi"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:43474"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00009"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00907"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_acon_C_m" sboTerm="SBO:0000247" id="M_acon_C_m" name="cis-aconitate" compartment="m" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C6H3O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0517</p>
+            <p>yeastkegg_id: C00417[c_11]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_acon_C_m">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CIS-ACONITATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16383"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00417"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/643757"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00331"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00630"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_acon_C_c" sboTerm="SBO:0000247" id="M_acon_C_c" name="cis-aconitate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C6H3O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0516</p>
+            <p>yeastkegg_id: C00417[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_acon_C_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CIS-ACONITATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16383"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00417"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/643757"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00331"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00630"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_xyl__D_c" sboTerm="SBO:0000247" id="M_xyl__D_c" name="D-xylose" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H10O5">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0578</p>
+            <p>yeastkegg_id: C00181[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_xyl__D_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CPD-15377"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15936"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00181"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/135191"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00154"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00779"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_acald_c" sboTerm="SBO:0000247" id="M_acald_c" name="acetaldehyde" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H4O1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0359</p>
+            <p>yeastkegg_id: C00084[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_acald_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ACETALD"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15343"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00084"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/177"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00071"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00022"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_pyr_c" sboTerm="SBO:0000247" id="M_pyr_c" name="pyruvate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H3O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1399</p>
+            <p>yeastkegg_id: C00022[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_pyr_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PYRUVATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15361"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00022"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1060"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00020"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00175"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_fmn_c" sboTerm="SBO:0000247" id="M_fmn_c" name="FMN" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C17H18N4O9P1">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0714</p>
+            <p>yeastkegg_id: C00061[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_fmn_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:FMN"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:58210"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00061"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/643976"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00050"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00085"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_fum_c" sboTerm="SBO:0000247" id="M_fum_c" name="fumarate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C4H2O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0725</p>
+            <p>yeastkegg_id: C00122[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_fum_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:FUM"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:29806"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00122"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/444972"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00106"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00101"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_succ_c" sboTerm="SBO:0000247" id="M_succ_c" name="succinate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C4H4O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_1458</p>
+            <p>yeastkegg_id: C00042[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_succ_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:SUC"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:30031"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00042"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/1110"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00036"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00338"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_lac__D_c" sboTerm="SBO:0000247" id="M_lac__D_c" name="(R)-lactate" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H5O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>formula_charge_source: biocyc</p>
+            <p>yeastgem76.compound: s_0025</p>
+            <p>yeastkegg_id: C00256[c_03]</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_lac__D_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/biocyc/META:D-LACTATE"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00256"/>
+                  <rdf:li rdf:resource="https://identifiers.org/pubchem.compound/61503"/>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00221"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ymdb/YMDB00287"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="cobra_default_ub" value="1000" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="cobra_0_bound" value="0" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="minus_inf" value="-INF" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="plus_inf" value="INF" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction metaid="meta_R_ASP1DC_c" sboTerm="SBO:0000176" id="R_ASP1DC_c" name="aspartate 1-decarboxylase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon, 3hpp</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_asp__L_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_co2_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ala_B_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_ALABAT_c" sboTerm="SBO:0000176" id="R_ALABAT_c" name="beta-alanine-pyruvate aminotransferase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon, 3hpp</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_akg_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ala_B_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_glu__L_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_msa_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_MSAR_c" sboTerm="SBO:0000176" id="R_MSAR_c" name="malonic semialdehyde reductase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpp</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_msa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_3hpp_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_3HPPt_c_e" sboTerm="SBO:0000185" id="R_3HPPt_c_e" name="3-hydroxypropionate transport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpp</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hpp_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_3hpp_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_3hpp_e" sboTerm="SBO:0000627" id="R_EX_3hpp_e" name="3-hydroxypropionate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpp</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hpp_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_GHBDHx_c" sboTerm="SBO:0000176" id="R_GHBDHx_c" name="Gamma-hydroxybutyrate dehydrogenase (NADH)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ghb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_sucsal_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ghb_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_GHBDHy_c" sboTerm="SBO:0000176" id="R_GHBDHy_c" name="Gamma-hydroxybutyrate dehydrogenase (NADP)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ghb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_sucsal_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ghb_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_GHBt_c_e" sboTerm="SBO:0000185" id="R_GHBt_c_e" name="Gamma-hydroxybutyrate transport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ghb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_ghb_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ghb_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_ghb_e" sboTerm="SBO:0000627" id="R_EX_ghb_e" name="Gamma-hydroxybutyrate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ghb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_ghb_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_3MOBt_c_e" sboTerm="SBO:0000185" id="R_3MOBt_c_e" name="3-methyl-2-oxobutanoate transport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3mob</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3mob_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_3mob_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_3mob_e" sboTerm="SBO:0000627" id="R_EX_3mob_e" name="3-methyl-2-oxobutanoate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3mob</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3mob_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_AACOAH_c" sboTerm="SBO:0000176" id="R_AACOAH_c" name="acetoacetyl-CoA hydrolase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_AACOAH_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R01358"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_coa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_acac_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_aacoa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_BDH_c" sboTerm="SBO:0000176" id="R_BDH_c" name="3-Hydroxybutanoate oxidoreductase (NADP)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_bhb_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_acac_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_BHBt_c_e" sboTerm="SBO:0000185" id="R_BHBt_c_e" name="(R)-3-Hydroxybutanoate transport via H+ symport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_h_e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_bhb_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_bhb_e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_bhb_e" sboTerm="SBO:0000627" id="R_EX_bhb_e" name="(R)-3-Hydroxybutanoate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: bhb</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_bhb_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_2OBUTt_c_e" sboTerm="SBO:0000185" id="R_2OBUTt_c_e" name="2-oxobutanoate transporter" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2obut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_2obut_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_2obut_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_2obut_e" sboTerm="SBO:0000627" id="R_EX_2obut_e" name="2-oxobutanoate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2obut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_2obut_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_AC2OBUTAT_c" sboTerm="SBO:0000176" id="R_AC2OBUTAT_c" name="acetyl-CoA:2-oxobutanoate C-acetyltransferase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_AC2OBUTAT_c">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R00998"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_2e2hobtae_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_coa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_accoa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_2obut_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_2E2HOBTAECBOX_c" sboTerm="SBO:0000176" id="R_2E2HOBTAECBOX_c" name="2-ethyl-2-hydroxybutanedioate carboxy-lyase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_2e2hobtae_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_3hpt_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_co2_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_3HPTt_c_e" sboTerm="SBO:0000185" id="R_3HPTt_c_e" name="3-hydroxypentanoate transporter" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hpt_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_3hpt_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_3hpt_e" sboTerm="SBO:0000627" id="R_EX_3hpt_e" name="2-oxobutanoate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hpt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hpt_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_HACD1_m" sboTerm="SBO:0000176" id="R_HACD1_m" name="3-hydroxyacyl-CoA dehydrogenase (acetoacetyl-CoA)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_aacoa_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_nad_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_3hbcoa_m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_ECOAH1_m" sboTerm="SBO:0000176" id="R_ECOAH1_m" name="3-hydroxyacyl-CoA dehydratase (3-hydroxybutanoyl-CoA)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hbcoa_m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_h2o_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_b2coa_m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_ACOAD1f_m" sboTerm="SBO:0000176" id="R_ACOAD1f_m" name="Acyl-CoA dehydrogenase (butanoyl-CoA)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_fad_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_btcoa_m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_fadh2_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_b2coa_m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_2OXPTNDH_c" sboTerm="SBO:0000176" id="R_2OXPTNDH_c" name="2-oxopentanoic acid decarboxylase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_coa_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_2oxptn_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_co2_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_btcoa_m" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_m" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_R2OXPTNt_m_c" sboTerm="SBO:0000185" id="R_R2OXPTNt_m_c" name="2-oxopentanoic acid transporter" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_2oxptn_m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_2oxptn_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_2OXPTNt_c_e" sboTerm="SBO:0000185" id="R_2OXPTNt_c_e" name="2-oxopentanoic acid transporter" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_2oxptn_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_2oxptn_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_2oxptn_e" sboTerm="SBO:0000627" id="R_EX_2oxptn_e" name="2-oxopentanoic acid exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 2oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_2oxptn_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_CITMt_c_e" sboTerm="SBO:0000185" id="R_CITMt_c_e" name="citramalate transport" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: citm</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_citm_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_citm_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_citm_e" sboTerm="SBO:0000627" id="R_EX_citm_e" name="citramalate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: citm</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_citm_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_CCMUACt_c_e" sboTerm="SBO:0000185" id="R_CCMUACt_c_e" name="cis,cis-muconate transport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_ccmuac_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ccmuac_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_ccmuac_e" sboTerm="SBO:0000627" id="R_EX_ccmuac_e" name="cis,cis-muconate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_ccmuac_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_DHSKDH_c" sboTerm="SBO:0000176" id="R_DHSKDH_c" name="3-dehydroshikimate dehydratase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3dhsk_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_34dhbz_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_PCADC_c" sboTerm="SBO:0000176" id="R_PCADC_c" name="protocatechuic acid (PCA) decarboxylase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_34dhbz_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_catechol_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_co2_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_CATADOX_c" sboTerm="SBO:0000176" id="R_CATADOX_c" name="catechol dioxygenase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: ccmuac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_o2_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_catechol_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ccmuac_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="3" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_RE1266C_c" sboTerm="SBO:0000176" id="R_RE1266C_c" name="4-Hydroxyphenylpyruvate Dioxygenase/alpha-Ketoisocaproate Dioxygenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hivac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_4mop_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_o2_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_co2_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_3hivac_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_3HIVACt_c_e" sboTerm="SBO:0000185" id="R_3HIVACt_c_e" name="3-hydroxy-3-methylbutanoate transporter" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hivac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hivac_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_3hivac_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_3hivac_e" sboTerm="SBO:0000627" id="R_EX_3hivac_e" name="3-hydroxy-3-methylbutanoate exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 3hivac</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_3hivac_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_MALK_c" sboTerm="SBO:0000176" id="R_MALK_c" name="malate kinase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_mal__L_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_atp_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_adp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_4pmal_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_MASD_c" sboTerm="SBO:0000176" id="R_MASD_c" name="Malate semialdehyde dehydrogenase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_pi_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_malsa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_4pmal_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_MALSARy_c" sboTerm="SBO:0000176" id="R_MALSARy_c" name="Malate semialdehyde reductase (NADP)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_malsa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_24dhbut_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_MALSARx_c" sboTerm="SBO:0000176" id="R_MALSARx_c" name="Malate semialdehyde reductase (NAD)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_malsa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_24dhbut_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_R24DHBUTt_c_e" sboTerm="SBO:0000185" id="R_R24DHBUTt_c_e" name="2,4-dihydroxybutanoate transporter" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_24dhbut_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_24dhbut_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_24dhbut_e" sboTerm="SBO:0000627" id="R_EX_24dhbut_e" name="2,4-dihydroxybutanoate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 24dhbut</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_24dhbut_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_MSADx_c" sboTerm="SBO:0000176" id="R_MSADx_c" name="malonic semialdehyde oxidoreductase (NADH)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_msa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_malon_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_MSADy_c" sboTerm="SBO:0000176" id="R_MSADy_c" name="malonic semialdehyde oxidoreductase (NADP)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_msa_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_malon_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_MALONt_c_e" sboTerm="SBO:0000185" id="R_MALONt_c_e" name="malonate transport" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_malon_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_malon_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_malon_e" sboTerm="SBO:0000627" id="R_EX_malon_e" name="malonate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: malon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_malon_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_ACONCt_c_e" sboTerm="SBO:0000185" id="R_ACONCt_c_e" name="cis-aconitic acid transporter" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: itacon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_acon_C_m" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_acon_C_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_CAD_c" sboTerm="SBO:0000176" id="R_CAD_c" name="cis-aconitic acid decarboxylase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: itacon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_acon_C_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_co2_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_itacon_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_ITACONt_c_e" sboTerm="SBO:0000185" id="R_ITACONt_c_e" name="itaconate transporter" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: itacon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_itacon_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_itacon_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_itacon_e" sboTerm="SBO:0000627" id="R_EX_itacon_e" name="itaconate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: itacon</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_itacon_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_XYLOR_c" sboTerm="SBO:0000176" id="R_XYLOR_c" name="D-xylose:NADP+ 1-oxidoreductase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_xyl__D_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_xylnact__D_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_XYLC_c" sboTerm="SBO:0000176" id="R_XYLC_c" name="xylonolactonase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_xylnact__D_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_dxylnt_e" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_DXYLNTt_c_e" sboTerm="SBO:0000185" id="R_DXYLNTt_c_e" name="D-Xylonate transporter" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_dxylnt_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_dxylnt_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_dxylnt_e" sboTerm="SBO:0000627" id="R_EX_dxylnt_e" name="D-Xylonate exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: dxylnt</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_dxylnt_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_HOPNTAL_c" sboTerm="SBO:0000176" id="R_HOPNTAL_c" name="4-hydroxy-2-oxopentanoate aldolase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_4h2opntn_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_acald_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_pyr_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_R4H2OPNTNR_c" sboTerm="SBO:0000176" id="R_R4H2OPNTNR_c" name="4-hydroxy-2-oxo-pentanoate reductase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_4h2opntn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_24dhpnta_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_24DHPNTADH_c" sboTerm="SBO:0000176" id="R_24DHPNTADH_c" name="2,4-dihydroxy-pentanoate dehydratase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_24dhpnta_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_4o2pntn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_4O2PNTNR_c" sboTerm="SBO:0000176" id="R_4O2PNTNR_c" name="2,4-dihydroxy-pentanoate dehydratase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_4o2pntn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_4oxptn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_4OXPTNt_c_e" sboTerm="SBO:0000185" id="R_4OXPTNt_c_e" name="4-oxopentanoic acid transporter" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_4oxptn_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_4oxptn_e" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_EX_4oxptn_e" sboTerm="SBO:0000627" id="R_EX_4oxptn_e" name="4-oxopentanoic acid exchange" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: 4oxptn</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_4oxptn_e" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_FRDfmn" sboTerm="SBO:0000176" id="R_FRDfmn" name="fumarate reductase (FMN)" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: frd</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_fum_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_fmnh2_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_fmn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_succ_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_FMNRx" name="FMN reductase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: frd</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_fmn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_fmnh2_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_LDH_D_c" sboTerm="SBO:0000176" id="R_LDH_D_c" name="Lactate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>acid_model_list: lac__D</p>
+          </html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="M_lac__D_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nad_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_pyr_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadh_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+    <fbc:listOfObjectives fbc:activeObjective="obj">
+      <fbc:objective fbc:id="obj" fbc:type="maximize"/>
+    </fbc:listOfObjectives>
+  </model>
+</sbml>

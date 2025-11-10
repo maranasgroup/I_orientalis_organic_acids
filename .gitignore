@@ -1,0 +1,78 @@
+# General .gitignore, with added items from github/gitignore
+
+# OS-generated Files
+####################
+.DS_Store
+__MACOSX/
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+ehthumbs.db
+Thumbs.db
+
+# Python
+########
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+setup.egg-info/
+*.egg
+*.pyd
+
+# MATLAB
+########
+*.m~
+.lockfiles
+_gcm_temp/
+*.diary
+*.user
+_Recommends.ctf
+
+# GAMS
+######
+*.log
+
+# Microsoft Office Temporary Files
+##################################
+~$*.docx
+~$*.xlsx
+~$*.pptx
+~$*.doc
+~$*.xls
+~$*.ppt
+
+# vi Temporary Files
+####################
+[._]*.sw[a-p]
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+#########
+.ipynb_checkpoints/
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# Compressed Files
+##################
+# it's better to uncompress these files and commit the raw sources since
+# git has its own built in compression methods, packfiles
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and Databases
+####################
+*.log
+*.sql
+*.sqlite
+
